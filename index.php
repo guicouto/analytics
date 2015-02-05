@@ -5,10 +5,14 @@
 	// em https://developers.google.com/analytics/devguides/reporting/core/dimsmets#cats=user,session
 	// consulte também o blog para http://www.tiagomatos.com/blog/pegando-dados-do-google-analytics-com-php-atraves-da-classe-gapi
 	
-	require_once("gapi/gapi.class.php");
-	$ga = new gapi('sua_conta_google', 'sua_senha_conta_google');
 	
-	$id = "seu_id_google";
+	
+	
+
+	require_once("gapi/gapi.class.php");
+	$ga = new gapi('site@isimples.com.br', 'is0028st');
+	
+	$id = "89444889";
 	
 	// Define o periodo do relatório
 	$inicio = date('Y-m-01', strtotime('-12 month')); // 1° dia do mês passado
